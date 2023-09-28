@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0" />
+    <title>京剧猫主页</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: #eee;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-repeat: repeat;
+        }
+
+        .music-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .baise {
+            background-color: white;
+            margin: 10px;
+        }
+
+        .flex1 {
+            flex: 1;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .yc {
+            text-decoration: none;
+            background-color: #E0E0E0;
+            /* 设置背景颜色 */
+            color: #404040;
+            /* 设置文字颜色 */
+            padding: 10px;
+            /* 设置内边距 */
+            display: block;
+            margin: 5px
+        }
+
+        .yc a {
+            background-color: #ff0000;
+            /* 设置背景颜色 */
+            color: #ffffff;
+            /* 设置文字颜色 */
+            padding: 10px;
+            /* 设置内边距 */
+
+        }
+
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            background-color: #f0f0f0;
+        }
+
+        @media (max-width:600px) {
+            .av {
+                display: none;
+            }
+
+            .na {
+                width: 100%;
+                margin: 10px
+            }
+
+            nb {
+                display: none
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            /* 在最大宽度为768px的情况下，使用不同的背景图片 */
+            .fullscreen-bg__image {
+                background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.5e252543247b91fc07fe5674d5b312ac?rik=kywhBiWUu96DDA&riu=http%3a%2f%2fp3.music.126.net%2f30Xmkv_9xmky-magxYFXmQ%3d%3d%2f18678503534920540.jpg&ehk=LziU6Wjvzh0qQZCIp5usyMZrNjOCLcwY0bscKjxjBt8%3d&risl=&pid=ImgRaw&r=0');
+            }
+        }
+
+        @media (min-width: 600px) {
+
+            /* 在最小宽度为769px的情况下，使用不同的背景图片 */
+            .fullscreen-bg__image {
+                background-image: url('https://z1.ax1x.com/2023/09/24/pPT5BIf.jpg');
+            }
+
+            .crd {
+                display: none;
+            }
+        }
+
+        .fullscreen-bg__image {
+            opacity: 0.7;
+            /* 设置透明度为50% */
+        }
+
+        .soty:hover {
+            scale: 5.97;
+            box-shadow: none;
+            background: red;
+        }
+
+        .oc {
+            box-shadow: 10px 10px 30px 0px lightgray;
+        }
+    </style>
+    <script>
+        var notices = [
+            "欢迎来到我们的网站！",
+            "这是个公告！",
+            "今天是个美好的一天！",
+            "公告由京猫乐工作室出版!"
+        ];
+
+        var currentIndex = 0; // 当前公告的索引
+
+        // 更新公告内容
+        function updateNotice() {
+            var noticeElement = document.getElementById("notice");
+            noticeElement.innerText = notices[currentIndex];
+
+            // 增加索引并循环
+            currentIndex = (currentIndex + 1) % notices.length;
+        }
+
+        // 每隔一段时间更新公告内容
+        setInterval(updateNotice, 3000); // 每3秒钟更新一次
+    </script>
+</head>
+
+<body class="flex container fullscreen-bg__image ">
+
+    <div class="ac baise na">
+        <div style="width:200px;height:100px;display:flex;align-items:center;justify-content:center">
+            <img src="https://x.imgs.ovh/x/2023/09/09/64fc833123083.jpg" height="80px" width="80px">
+            <div style="margin-left:10px" class="daoHangl">
+                <p>京剧猫.使命守护</p>
+            </div>
+        </div>
+        <div style="text-align:center">
+            <form action="http://www.baidu.com/s" method="get" target="_blank">
+                <input type="text" name="wd" placeholder="请输入搜索内容">
+                <button type="submit">搜索</button>
+            </form>
+        </div>
+        <a href="https://jjmsmsh.neocities.org/" class="yc soty">
+            <div class="daoHangl">
+                <p>游戏简介</p>
+            </div>
+        </a>
+        <a href="a" class="yc soty">
+            <div class="daoHangl">
+                <p>游戏下载</p>
+            </div>
+        </a>
+        <a href="a" class="yc soty">
+            <div class="daoHangl">
+                <p>帮助与支持</p>
+            </div>
+        </a>
+        <a href="a" class="yc soty">
+            <div class="daoHangl">
+                <p>游戏视频</p>
+            </div>
+        </a>
+        <a href="a" class="yc soty">
+            <div class="daoHangl">
+                <p>京剧猫小说推荐</p>
+            </div>
+        </a>
+        <a href="a" class="yc crd soty">
+            <div class="daoHangl">
+                <p>公告</p>
+            </div>
+        </a>
+        <div class="baise yc">
+            <audio controls>
+                <source src="https://link.hhtjim.com/163/1334112562.mp3" type="audio/mpeg">
+            </audio>
+            <p>飘荡音乐</p>
+        </div>
+        <div class="flex1 flex column av ">
+            <div style="height:60px;" class="av baise zuqvyv music-container flex">
+                <div style="text-align: center;">
+                    <h1>
+                        公告区
+                    </h1>
+                </div>
+            </div>
+            <div class="flex1 flex column a baise" style="background-repeat:no-repeat;">
+                <div style="height:60px;margin:10px;color: red;" class="yc">
+                    你好，玩家。<br>
+                    <p id="notice"></p>
+                </div>
+                <div style="height:60px;margin:10px;color: red;" class="yc">
+                    时间[？年？月？日]。<br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
